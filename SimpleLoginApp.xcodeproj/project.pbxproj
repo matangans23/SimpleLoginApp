@@ -7,18 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D680C5769C6662A6687CE69 /* Pods_SimpleLoginApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E507C79792F1174907D92F5 /* Pods_SimpleLoginApp.framework */; };
 		B60E4F7B2A09D98B00924344 /* SimpleLoginAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60E4F7A2A09D98B00924344 /* SimpleLoginAppApp.swift */; };
 		B60E4F7D2A09D98B00924344 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B60E4F7C2A09D98B00924344 /* ContentView.swift */; };
 		B60E4F7F2A09D98D00924344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60E4F7E2A09D98D00924344 /* Assets.xcassets */; };
 		B60E4F822A09D98D00924344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B60E4F812A09D98D00924344 /* Preview Assets.xcassets */; };
+		B65602F62A09EE93006AA19C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B65602F52A09EE93006AA19C /* GoogleService-Info.plist */; };
+		B65602F82A09F5A0006AA19C /* FirebaseFirestore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B65602F72A09F5A0006AA19C /* FirebaseFirestore.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B65602F92A09F5A0006AA19C /* FirebaseFirestore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B65602F72A09F5A0006AA19C /* FirebaseFirestore.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B65602FC2A09F9AA006AA19C /* SigninPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65602FB2A09F9AA006AA19C /* SigninPage.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B65602FA2A09F5A0006AA19C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B65602F92A09F5A0006AA19C /* FirebaseFirestore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1E507C79792F1174907D92F5 /* Pods_SimpleLoginApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleLoginApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		434A2AD84CD57575A66419CF /* Pods-SimpleLoginApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleLoginApp.release.xcconfig"; path = "Target Support Files/Pods-SimpleLoginApp/Pods-SimpleLoginApp.release.xcconfig"; sourceTree = "<group>"; };
+		5D09F723D1450F656A975915 /* Pods-SimpleLoginApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleLoginApp.debug.xcconfig"; path = "Target Support Files/Pods-SimpleLoginApp/Pods-SimpleLoginApp.debug.xcconfig"; sourceTree = "<group>"; };
 		B60E4F772A09D98B00924344 /* SimpleLoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleLoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B60E4F7A2A09D98B00924344 /* SimpleLoginAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleLoginAppApp.swift; sourceTree = "<group>"; };
 		B60E4F7C2A09D98B00924344 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B60E4F7E2A09D98D00924344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B60E4F812A09D98D00924344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B65602F52A09EE93006AA19C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B65602F72A09F5A0006AA19C /* FirebaseFirestore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseFirestore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B65602FB2A09F9AA006AA19C /* SigninPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +51,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D680C5769C6662A6687CE69 /* Pods_SimpleLoginApp.framework in Frameworks */,
+				B65602F82A09F5A0006AA19C /* FirebaseFirestore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A210AD962B155CEEBE31338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B65602F72A09F5A0006AA19C /* FirebaseFirestore.framework */,
+				1E507C79792F1174907D92F5 /* Pods_SimpleLoginApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B60E4F6E2A09D98B00924344 = {
 			isa = PBXGroup;
 			children = (
 				B60E4F792A09D98B00924344 /* SimpleLoginApp */,
 				B60E4F782A09D98B00924344 /* Products */,
+				BCCEC174DC3256F0CAC364D1 /* Pods */,
+				2A210AD962B155CEEBE31338 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +89,10 @@
 		B60E4F792A09D98B00924344 /* SimpleLoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				B65602F52A09EE93006AA19C /* GoogleService-Info.plist */,
 				B60E4F7A2A09D98B00924344 /* SimpleLoginAppApp.swift */,
 				B60E4F7C2A09D98B00924344 /* ContentView.swift */,
+				B65602FB2A09F9AA006AA19C /* SigninPage.swift */,
 				B60E4F7E2A09D98D00924344 /* Assets.xcassets */,
 				B60E4F802A09D98D00924344 /* Preview Content */,
 			);
@@ -67,6 +107,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		BCCEC174DC3256F0CAC364D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D09F723D1450F656A975915 /* Pods-SimpleLoginApp.debug.xcconfig */,
+				434A2AD84CD57575A66419CF /* Pods-SimpleLoginApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +123,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B60E4F852A09D98D00924344 /* Build configuration list for PBXNativeTarget "SimpleLoginApp" */;
 			buildPhases = (
+				39DCB39E9D46A787A75484DD /* [CP] Check Pods Manifest.lock */,
 				B60E4F732A09D98B00924344 /* Sources */,
 				B60E4F742A09D98B00924344 /* Frameworks */,
 				B60E4F752A09D98B00924344 /* Resources */,
+				7DC2C753DD9B53EE5F4E5337 /* [CP] Embed Pods Frameworks */,
+				B65602FA2A09F5A0006AA19C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,10 +179,53 @@
 			files = (
 				B60E4F822A09D98D00924344 /* Preview Assets.xcassets in Resources */,
 				B60E4F7F2A09D98D00924344 /* Assets.xcassets in Resources */,
+				B65602F62A09EE93006AA19C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39DCB39E9D46A787A75484DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleLoginApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DC2C753DD9B53EE5F4E5337 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleLoginApp/Pods-SimpleLoginApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleLoginApp/Pods-SimpleLoginApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleLoginApp/Pods-SimpleLoginApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B60E4F732A09D98B00924344 /* Sources */ = {
@@ -138,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B60E4F7D2A09D98B00924344 /* ContentView.swift in Sources */,
+				B65602FC2A09F9AA006AA19C /* SigninPage.swift in Sources */,
 				B60E4F7B2A09D98B00924344 /* SimpleLoginAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +357,7 @@
 		};
 		B60E4F862A09D98D00924344 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D09F723D1450F656A975915 /* Pods-SimpleLoginApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,6 +386,7 @@
 		};
 		B60E4F872A09D98D00924344 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 434A2AD84CD57575A66419CF /* Pods-SimpleLoginApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
