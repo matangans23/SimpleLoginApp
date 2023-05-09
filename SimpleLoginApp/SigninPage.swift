@@ -138,6 +138,8 @@ struct SignUpView: View {
 
 struct SigninPage_Previews: PreviewProvider {
     static var previews: some View {
+        let viewModel = AppViewModel()
         SigninPage()
+            .environmentObject(viewModel)
     }
 }
